@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Municipality of Carmen, Surigao del Sur | Official Website</title>
+<meta name="description" content="Official website of the Local Government Unit of Carmen, Surigao del Sur. Access services, announcements, and information about our municipality.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2245%22 fill=%22%230D0D0D%22/><text x=%2250%22 y=%2263%22 font-size=%2250%22 text-anchor=%22middle%22 fill=%22%2300C853%22>C</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<!-- ============ TOP UTILITY BAR ============ -->
+<div class="topbar">
+  <div class="container topbar-inner">
+    <div class="topbar-left">
+      <span class="topbar-item" id="topbar-date"></span>
+      <span class="topbar-divider" aria-hidden="true"></span>
+      <span class="topbar-item topbar-weather">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M17.5 19H6.5A4.5 4.5 0 0 1 6 10.03 5.5 5.5 0 0 1 16.9 8.5 4.5 4.5 0 0 1 17.5 19Z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>Carmen, SDS &mdash; 29&deg;C, Partly Cloudy</span>
+      </span>
+    </div>
+    <div class="topbar-right">
+      <a href="#transparency">Transparency Seal</a>
+      <a href="#charter">Citizen's Charter</a>
+      <a href="#contact">Contact</a>
+      <div class="lang-switch" aria-label="Language">
+        <button type="button" class="lang-btn active" data-lang="en">EN</button>
+        <button type="button" class="lang-btn" data-lang="fil">FIL</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ ALERT TICKER ============ -->
+<div class="ticker" role="status" aria-label="Announcements ticker">
+  <div class="ticker-tag">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 9v4m0 4h.01M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <span>Advisory</span>
+  </div>
+  <div class="ticker-track-wrap">
+    <div class="ticker-track" id="tickerTrack">
+      <span>Business Permit Renewal deadline extended to July 31, 2026.</span>
+      <span>Free medical mission at Barangay Poblacion Gymnasium &mdash; July 15, 2026.</span>
+      <span>Road closure along Carmen-Lanuza Road for repair, July 5&ndash;10.</span>
+      <span>2026 Job Fair at Municipal Hall Grounds, July 20, 2026.</span>
+    </div>
+  </div>
+</div>
+
+<!-- ============ HEADER / NAV ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="#" class="brand">
+      <span class="brand-seal">
+        <img src="assets/img/seal.png" alt="Official Seal of the Municipality of Carmen, Surigao del Sur" width="46" height="46">
+      </span>
+      <span class="brand-text">
+        <strong>Municipality of Carmen</strong>
+        <small>Province of Surigao del Sur</small>
+      </span>
+    </a>
+
+    <nav class="main-nav" id="mainNav" aria-label="Primary">
+      <ul>
+        <li><a href="#hero" class="active">Home</a></li>
+        <li class="has-dropdown">
+          <a href="#about" aria-haspopup="true" aria-expanded="false">About Carmen</a>
+          <ul class="dropdown">
+            <li><a href="#about">History &amp; Culture</a></li>
+            <li><a href="#officials">Municipal Officials</a></li>
+            <li><a href="#barangays">Barangays</a></li>
+          </ul>
+        </li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#news">Announcements</a></li>
+        <li><a href="#officials">Leadership</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" type="button" aria-label="Search the site" id="searchToggle">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="m20 20-3.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <a href="#services" class="btn btn-gold btn-sm">e-Services</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="search-panel" id="searchPanel">
+    <div class="container search-panel-inner">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="m20 20-3.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <input type="search" placeholder="Search services, announcements, offices..." aria-label="Search site">
+      <button type="button" class="icon-btn" id="searchClose" aria-label="Close search">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main-content">
+
+  <!-- ============ HERO: CIVIC DASHBOARD ============ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="container hero-container">
+
+      <div class="hero-intro">
+        <span class="eyebrow">Local Government Unit &bull; Republic of the Philippines</span>
+        <h1>Serving Carmen, <span class="gold-text">Building Tomorrow.</span></h1>
+        <p>Welcome to the official portal of the Municipality of Carmen, Surigao del Sur. Access government services, track your applications, and stay informed &mdash; all in one place.</p>
+        <div class="hero-cta">
+          <a href="#services" class="btn btn-gold">Explore Services</a>
+          <a href="#report" class="btn btn-outline">Report a Concern</a>
+        </div>
+        <div class="hero-meta">
+          <div class="hero-meta-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s7-6.1 7-11.5A7 7 0 0 0 5 9.5C5 14.9 12 21 12 21Z" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="9.5" r="2.4" stroke="currentColor" stroke-width="1.7"/></svg>
+            <span>Poblacion, Carmen, Surigao del Sur, Caraga</span>
+          </div>
+          <div class="hero-meta-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 8v5l3 2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/></svg>
+            <span>Office Hours: 8:00 AM &ndash; 5:00 PM, Mon&ndash;Fri</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dashboard panel -->
+      <div class="dashboard" role="region" aria-label="Civic services dashboard">
+        <div class="dashboard-head">
+          <span class="dash-dot" aria-hidden="true"></span>
+          <span>Civic Dashboard</span>
+          <span class="dash-live">LIVE</span>
+        </div>
+
+        <div class="dash-stats">
+          <div class="stat-card">
+            <span class="stat-value" data-count="24">0</span>
+            <span class="stat-label">Barangays</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-value" data-count="61738">0</span>
+            <span class="stat-label">Population</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-value" data-count="187">0</span>
+            <span class="stat-label">sq.km Land Area</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-value" data-count="12">0</span>
+            <span class="stat-label">Active Advisories</span>
+          </div>
+        </div>
+
+        <div class="dash-widgets">
+          <div class="widget widget-weather">
+            <div class="widget-title">Today's Forecast</div>
+            <div class="widget-weather-body">
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M17.5 19H6.5A4.5 4.5 0 0 1 6 10.03 5.5 5.5 0 0 1 16.9 8.5 4.5 4.5 0 0 1 17.5 19Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <div>
+                <strong>29&deg;C</strong>
+                <small>Partly Cloudy &middot; Humidity 78%</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="widget widget-alert">
+            <div class="widget-title">Emergency Hotline</div>
+            <a href="tel:+639171234567" class="widget-hotline">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1.1.4 2.2.7 3.2a2 2 0 0 1-.5 2.1L8 10.3a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c1 .3 2.1.6 3.2.7a2 2 0 0 1 1.7 2Z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>MDRRMO: (086) 000-0000</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="dash-links">
+          <a href="#pay" class="dash-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="6" width="18" height="13" rx="2" stroke="currentColor" stroke-width="1.7"/><path d="M3 10h18M7 15h4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+            <span>Pay Taxes &amp; Fees</span>
+          </a>
+          <a href="#track" class="dash-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 12.5l2 2 4-4.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/></svg>
+            <span>Track Application</span>
+          </a>
+          <a href="#jobs" class="dash-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="7" width="18" height="12" rx="2" stroke="currentColor" stroke-width="1.7"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" stroke="currentColor" stroke-width="1.7"/></svg>
+            <span>Job Openings</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow eyebrow-dark">e-Services</span>
+        <h2>Government Services at Your Fingertips</h2>
+        <p>Quick access to the most requested municipal services &mdash; online, at the counter, or on the go.</p>
+      </div>
+
+      <div class="service-grid">
+        <a class="service-card" href="#business-permit">
+          <span class="service-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 21V9l9-6 9 6v12" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 21v-6h6v6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <h3>Business Permits</h3>
+          <p>New applications, renewals, and requirements for local businesses.</p>
+          <span class="service-arrow" aria-hidden="true">&rarr;</span>
+        </a>
+
+        <a class="service-card" href="#civil-registry">
+          <span class="service-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 3h10a2 2 0 0 1 2 2v16l-7-3-7 3V5a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <h3>Civil Registry</h3>
+          <p>Birth, marriage, and death certificates issued by the LCRO.</p>
+          <span class="service-arrow" aria-hidden="true">&rarr;</span>
+        </a>
+
+        <a class="service-card" href="#health">
+          <span class="service-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s-7-4.5-9.3-9A5.4 5.4 0 0 1 12 6.2 5.4 5.4 0 0 1 21.3 12c-2.3 4.5-9.3 9-9.3 9Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M9 12h2l1-2 2 4 1-2h2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <h3>Health Services</h3>
+          <p>RHU schedules, immunization, and medical assistance programs.</p>
+          <span class="service-arrow" aria-hidden="true">&rarr;</span>
+        </a>
+
+        <a class="service-card" href="#taxes">
+          <span class="service-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2v20M17 6.5c0-1.9-2.2-3.5-5-3.5s-5 1.6-5 3.5 2.2 3 5 3.5 5 1.6 5 3.5-2.2 3.5-5 3.5-5-1.6-5-3.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+          </span>
+          <h3>Real Property Tax</h3>
+          <p>Assessment, payment schedules, and online tax verification.</p>
+          <span class="service-arrow" aria-hidden="true">&rarr;</span>
+        </a>
+
+        <a class="service-card" href="#social-welfare">
+          <span class="service-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="8.5" cy="8" r="3" stroke="currentColor" stroke-width="1.7"/><circle cx="16.5" cy="9" r="2.4" stroke="currentColor" stroke-width="1.7"/><path d="M2.5 20c.6-3.4 3-5.5 6-5.5s5.4 2.1 6 5.5M14.5 20c.4-2.4 2-4 4-4.2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+          </span>
+          <h3>Social Welfare</h3>
+          <p>4Ps, senior citizen benefits, and PWD assistance programs.</p>
+          <span class="service-arrow" aria-hidden="true">&rarr;</span>
+        </a>
+
+        <a class="service-card" href="#report">
+          <span class="service-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 9v4m0 4h.01M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0Z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <h3>Report a Concern</h3>
+          <p>File complaints or report infrastructure and public safety issues.</p>
+          <span class="service-arrow" aria-hidden="true">&rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ NEWS / ANNOUNCEMENTS ============ -->
+  <section class="news" id="news">
+    <div class="container">
+      <div class="section-head section-head-split">
+        <div>
+          <span class="eyebrow eyebrow-dark">Newsroom</span>
+          <h2>Latest Announcements</h2>
+        </div>
+        <a href="#news" class="link-more">View all announcements &rarr;</a>
+      </div>
+
+      <div class="news-grid">
+        <article class="news-card news-card-featured">
+          <div class="news-thumb news-thumb-1" aria-hidden="true"></div>
+          <div class="news-body">
+            <span class="tag tag-gold">Public Advisory</span>
+            <time datetime="2026-06-28">June 28, 2026</time>
+            <h3>Municipal Government Launches Free Wi-Fi Zones in 10 Barangays</h3>
+            <p>As part of its digital inclusion program, the LGU Carmen has activated free public Wi-Fi access points across ten barangay halls to improve connectivity for residents and students.</p>
+            <a href="#" class="link-more">Read full story &rarr;</a>
+          </div>
+        </article>
+
+        <article class="news-card">
+          <div class="news-thumb news-thumb-2" aria-hidden="true"></div>
+          <div class="news-body">
+            <span class="tag tag-green">Health</span>
+            <time datetime="2026-06-24">June 24, 2026</time>
+            <h3>Free Medical &amp; Dental Mission Set for Barangay Poblacion</h3>
+            <a href="#" class="link-more">Read more &rarr;</a>
+          </div>
+        </article>
+
+        <article class="news-card">
+          <div class="news-thumb news-thumb-3" aria-hidden="true"></div>
+          <div class="news-body">
+            <span class="tag tag-green">Infrastructure</span>
+            <time datetime="2026-06-19">June 19, 2026</time>
+            <h3>Carmen-Lanuza Road Rehabilitation Enters Final Phase</h3>
+            <a href="#" class="link-more">Read more &rarr;</a>
+          </div>
+        </article>
+
+        <article class="news-card">
+          <div class="news-thumb news-thumb-4" aria-hidden="true"></div>
+          <div class="news-body">
+            <span class="tag tag-gold">Employment</span>
+            <time datetime="2026-06-15">June 15, 2026</time>
+            <h3>2026 Job Fair to Be Held at Municipal Hall Grounds</h3>
+            <a href="#" class="link-more">Read more &rarr;</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ OFFICIALS / LEADERSHIP ============ -->
+  <section class="officials" id="officials">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Leadership</span>
+        <h2>Your Municipal Officials</h2>
+        <p>Meet the elected leaders serving the Municipality of Carmen for term 2025&ndash;2028.</p>
+      </div>
+
+      <div class="officials-lead">
+        <div class="official-card official-card-lead">
+          <div class="official-photo official-photo-mayor" aria-hidden="true"></div>
+          <h3>Hon. Juan D. Dela Cruz</h3>
+          <span class="official-role">Municipal Mayor</span>
+          <p>"Committed to transparent, inclusive, and progressive governance for every family in Carmen."</p>
+        </div>
+        <div class="official-card official-card-lead">
+          <div class="official-photo official-photo-vmayor" aria-hidden="true"></div>
+          <h3>Hon. Maria S. Santos</h3>
+          <span class="official-role">Municipal Vice Mayor</span>
+          <p>Presiding Officer, Sangguniang Bayan ng Carmen.</p>
+        </div>
+      </div>
+
+      <div class="officials-grid">
+        <div class="official-mini"><span class="official-mini-avatar" aria-hidden="true"></span><strong>Councilor A</strong><small>SB Member</small></div>
+        <div class="official-mini"><span class="official-mini-avatar" aria-hidden="true"></span><strong>Councilor B</strong><small>SB Member</small></div>
+        <div class="official-mini"><span class="official-mini-avatar" aria-hidden="true"></span><strong>Councilor C</strong><small>SB Member</small></div>
+        <div class="official-mini"><span class="official-mini-avatar" aria-hidden="true"></span><strong>Councilor D</strong><small>SB Member</small></div>
+        <div class="official-mini"><span class="official-mini-avatar" aria-hidden="true"></span><strong>Councilor E</strong><small>SB Member</small></div>
+        <div class="official-mini"><span class="official-mini-avatar" aria-hidden="true"></span><strong>Councilor F</strong><small>SB Member</small></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA STRIP ============ -->
+  <section class="cta-strip">
+    <div class="container cta-strip-inner">
+      <div>
+        <h2>Need Assistance from the LGU?</h2>
+        <p>Our Public Assistance and Complaints Desk is ready to help you, Monday to Friday, 8:00 AM to 5:00 PM.</p>
+      </div>
+      <a href="#contact" class="btn btn-gold">Visit Public Assistance Desk</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer" id="contact">
+  <div class="container footer-grid">
+    <div class="footer-col footer-brand">
+      <div class="brand">
+        <span class="brand-seal">
+          <img src="assets/img/seal.png" alt="Official Seal of the Municipality of Carmen, Surigao del Sur" width="42" height="42">
+        </span>
+        <span class="brand-text">
+          <strong>Municipality of Carmen</strong>
+          <small>Surigao del Sur, Caraga, Philippines</small>
+        </span>
+      </div>
+      <p>The official website of the Local Government Unit of Carmen, dedicated to transparent public service and sustainable community development.</p>
+      <div class="social-row">
+        <a href="#" class="social-btn" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M14 9h3V6h-3c-1.7 0-3 1.3-3 3v2H9v3h2v7h3v-7h3l1-3h-4V9c0-.6.4-1 1-1Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></a>
+        <a href="#" class="social-btn" aria-label="X (Twitter)"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 4l16 16M20 4 4 20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></a>
+        <a href="#" class="social-btn" aria-label="YouTube"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="6" width="18" height="12" rx="3" stroke="currentColor" stroke-width="1.6"/><path d="M11 10l4 2-4 2v-4Z" fill="currentColor"/></svg></a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#about">About Carmen</a></li>
+        <li><a href="#services">e-Services</a></li>
+        <li><a href="#news">Announcements</a></li>
+        <li><a href="#officials">Municipal Officials</a></li>
+        <li><a href="#transparency">Transparency Seal</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Offices</h4>
+      <ul>
+        <li><a href="#">Office of the Mayor</a></li>
+        <li><a href="#">Municipal Treasurer's Office</a></li>
+        <li><a href="#">Local Civil Registry</a></li>
+        <li><a href="#">Rural Health Unit</a></li>
+        <li><a href="#">MDRRMO</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact Us</h4>
+      <ul class="contact-list">
+        <li>
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s7-6.1 7-11.5A7 7 0 0 0 5 9.5C5 14.9 12 21 12 21Z" stroke="currentColor" stroke-width="1.6"/></svg>
+          <span>Municipal Hall, Poblacion, Carmen, Surigao del Sur 8309</span>
+        </li>
+        <li>
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1.1.4 2.2.7 3.2a2 2 0 0 1-.5 2.1L8 10.3a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c1 .3 2.1.6 3.2.7a2 2 0 0 1 1.7 2Z" stroke="currentColor" stroke-width="1.6"/></svg>
+          <span>(086) 000-0000</span>
+        </li>
+        <li>
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="1.6"/></svg>
+          <span>lgu.carmen@sds.gov.ph</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container footer-bottom-inner">
+      <p>&copy; <span id="year"></span> Municipality of Carmen, Surigao del Sur. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<script src="js/script.js"></script>
+</body>
+</html>
